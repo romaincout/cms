@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<!-- TODO? highlight title when alink is clicked ?-->
+<html>
+<head>
+  <link rel="stylesheet" href="satellite.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body><a name="TOP"></a>
+<button type="button" class="collapsible" style="font-size: 1.65rem;">
+  Toc
+</button>
+<div class="content">
+  <div id="toc"></div>
+</div>
+
+<div id="fixed-div">
+  <div id="open"><input type="button" value="oen all" /></div>
+  <div style="font-size: 50%;">(helps with search)</div>
+  <div id="close"><input type="button" value="close all" /></div>
+</div>
+<div id="fixed-div-center">
+  <a href="#TOP" onclick="scrollSmoothTo(this);return false;"><input type="button" value="top" /></a>
+</div>
+<div id="contents"><br />
+
+<br/><br/><br/><br/>just some spaces so testing makes sense<br/><br/><br/><br/>
+
+<button type="button" class="collapsible collapsed_by_default">
+  <h1>Title A (Collapsible Level 1 Title )</h1>
+</button>
+<div class="content">
+  <div>
+    <pre>some text<!--
+      --><h2>Title A1 (Title within a collapsible section)</h2><!--
+      -->Hello <a href="#upload_iso" onclick="scrollSmoothTo(this);return false;">this a a link</a> to a collapsible section that will get opened (along with parents if any) if it's closed<!--
+
+      --><button type="button" class="collapsible collapsed_by_default"><h2>Title A2 (Collapsible title within a collapsible)</h2></button><!--
+      --><div class="content"><pre><!--
+        -->some tex<!--
+      --></pre></div><!--
+    --></pre>
+  </div>
+</div>
+
+<br/><br/><br/><br/>just some spaces so testing makes sense<br/><br/><br/><br/>
+
+<h1>Title B</h1>
+  <pre>some text<!--
+--></pre>
+
+<br/><br/><br/><br/>just some spaces so testing makes sense<br/><br/><br/><br/>
+
+<h1>Title C</h1>
+<button type="button" class="collapsible collapsed_by_default">Collapsible box (not a title)</button>
+<div class="content"<!--
+  -->some text<!--
+  --><button type="button" class="collapsible collapsed_by_default">Collapsible within a collapsible</button><!--
+  --><div class="content"><a name="upload_iso" /><pre><!--
+    -->some text (you can link to this section, see within A1)<!--
+    --><!--
+  --></pre></div>
+</div>
+
+<br/><br/><br/><br/>just some spaces so testing makes sense<br/><br/><br/><br/>
+
+</div><!--contents div used by TOC -->
+  <script type="text/javascript" src="satellite.js"></script>
+</body></html>
